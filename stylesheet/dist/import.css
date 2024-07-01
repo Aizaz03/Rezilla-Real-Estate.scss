@@ -5,9 +5,11 @@ body {
   box-sizing: border-box;
   font-family: "poppins", "sans-serif";
 }
+
 body .top-bar {
   background: #3a0ca3;
 }
+
 body .top-bar .content {
   display: flex;
   flex-direction: row;
@@ -19,6 +21,7 @@ body .top-bar .content {
   width: 100%;
   margin: 0 auto;
 }
+
 body .top-bar .content .location {
   display: flex;
   flex-direction: row;
@@ -26,10 +29,12 @@ body .top-bar .content .location {
   align-items: center;
   gap: 0.5rem;
 }
+
 body .top-bar .content .location img {
   width: 0.75rem;
   height: 1rem;
 }
+
 body .top-bar .content .location span {
   color: #fff;
   font-size: 0.8313rem;
@@ -38,6 +43,7 @@ body .top-bar .content .location span {
   letter-spacing: 0;
   text-align: start;
 }
+
 body .top-bar .content .contact {
   display: flex;
   flex-direction: row;
@@ -45,6 +51,7 @@ body .top-bar .content .contact {
   align-items: center;
   gap: 1.875rem;
 }
+
 body .top-bar .content .contact .phone {
   display: flex;
   flex-direction: row;
@@ -52,10 +59,12 @@ body .top-bar .content .contact .phone {
   align-items: center;
   gap: 0.5rem;
 }
+
 body .top-bar .content .contact .phone img {
   width: 1rem;
   height: 1rem;
 }
+
 body .top-bar .content .contact .phone span {
   color: #fff;
   font-size: 0.8313rem;
@@ -64,6 +73,7 @@ body .top-bar .content .contact .phone span {
   letter-spacing: 0;
   text-align: start;
 }
+
 body .top-bar .content .contact .email {
   display: flex;
   flex-direction: row;
@@ -71,10 +81,12 @@ body .top-bar .content .contact .email {
   align-items: center;
   gap: 0.5rem;
 }
+
 body .top-bar .content .contact .email img {
   width: 1rem;
   height: 0.75rem;
 }
+
 body .top-bar .content .contact .email span {
   color: #fff;
   font-size: 0.8313rem;
@@ -83,98 +95,34 @@ body .top-bar .content .contact .email span {
   letter-spacing: 0;
   text-align: start;
 }
-body .header {
-  max-width: 77.5rem;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.625rem;
-  padding: 0.7188rem 0;
-}
+
 body .header .menu-listing {
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
   gap: 1rem;
-  padding-left: 0;
 }
+
 body .header .menu-listing li {
   list-style: none;
 }
+
 body .header .menu-listing li a {
   text-decoration: none;
-  color: #2b2b2b;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-  letter-spacing: 0;
-  text-align: start;
-  padding: 0.4375rem 1rem;
 }
-body .header .menu-listing li a:hover {
-  background-color: rgba(67, 97, 238, 0.3019607843);
-  border-radius: 1.875rem;
-}
+
 body .header .logo img {
   width: 7.75rem;
   height: 3.125rem;
 }
-body .header .button-listing {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  gap: 1.25rem;
+
+body .header .logo .button-listing .button-wrapper img {
+  width: 10px;
 }
-body .header .button-listing .login-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  gap: 0.625rem;
-  padding: 0 0.4375rem;
+
+body .header .logo .button-listing .button-wrapper input {
+  width: 10px;
 }
-body .header .button-listing .login-button img {
-  width: 1.125rem;
-  height: 1.125rem;
-}
-body .header .button-listing .login-button input {
-  background: transparent !important;
-  border: none !important;
-  color: #2b2b2b;
-  font-size: 16px;
-  line-height: 1.5rem;
-  font-weight: 500;
-  letter-spacing: 0;
-  text-align: start;
-  padding: 0;
-}
-body .header .button-listing .listing-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  gap: 0.625rem;
-  background-color: #3a0ca3;
-  border-radius: 1.875rem;
-  padding: 0.8125rem 1.9375rem;
-}
-body .header .button-listing .listing-button img {
-  width: 1.125rem;
-  height: 1.125rem;
-}
-body .header .button-listing .listing-button input {
-  background: transparent !important;
-  border: none !important;
-  color: #fff;
-  font-size: 16px;
-  line-height: 1.5rem;
-  font-weight: 500;
-  letter-spacing: 0;
-  text-align: start;
-  padding: 0;
-}/*# sourceMappingURL=import.css.map */
+
+/*# sourceMappingURL=import.css.map */
