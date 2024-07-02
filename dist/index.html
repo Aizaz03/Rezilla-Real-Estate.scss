@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./stylesheet/import.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.js"></script>
     <title>Rezillla-Real Estate</title>
   </head>
   <body>
@@ -25,27 +33,157 @@
         </div>
       </div>
     </div>
-    <div class="header">
-      <ul class="menu-listing">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Listing</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-      <div class="logo">
-        <img src="./assets/svgs/logo.svg" alt="logo" />
-      </div>
-      <div class="button-listing">
-        <div class="login-button">
-          <img src="./assets/svgs/profile.svg" alt="profile" />
-          <input type="button" value="Login/Register" />
+    <div class="listing">
+      <div class="header">
+        <div class="content">
+          <ul class="menu-listing">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Listing</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <div class="logo">
+            <img src="./assets/svgs/logo.svg" alt="logo" />
+          </div>
+          <div class="button-listing">
+            <div class="login-button">
+              <img src="./assets/svgs/profile.svg" alt="profile" />
+              <input type="button" value="Login/Register" />
+            </div>
+            <div class="listing-button">
+              <img src="./assets/svgs/home.svg" alt="home" />
+              <input type="button" value="Add Listing" />
+            </div>
+          </div>
         </div>
-        <div class="listing-button">
-          <img src="./assets/svgs/home.svg" alt="home" />
-          <input type="button" value="Add Listing" />
+      </div>
+      <div class="main-banner">
+        <img src="./assets/svgs/bg-gradient.svg" alt="bg-gradient" />
+        <div class="main-content">
+          <div class="home-finding">
+            <span>REAL ESTATE</span>
+            <h1>Find a perfect home you love..!</h1>
+            <p>
+              Etiam eget elementum elit. Aenean dignissim dapibus vestibulum.
+              Integer a dolor eu sapien sodales vulputate ac in purus.
+            </p>
+            <div class="slideshow-container">
+              <img src="./assets/svgs/circle.svg" alt="circle">
+            
+              <div class="mySlides">
+                <img src="https://www.w3schools.com/howto/img_fjords_wide.jpg" >
+              </div>
+            
+              <div class="mySlides">
+                <img src="https://www.w3schools.com/howto/img_lights_wide.jpg">
+              </div>
+            
+              <div class="mySlides">
+                <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg">
+              </div>
+            
+              <a class="prev" onclick="plusSlides(-1)"><img src="./assets/svgs/arrow-left.svg" alt="arrow-left"></a>
+              <a class="next" onclick="plusSlides(1)"><img src="./assets/svgs/arrow-right.svg" alt="arrow-right"></a>
+            </div>
+            <br>           
+            <div class="slide-bar">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            </div>
+            <div class="search-form">
+              <ul class="tabs">
+                <li data-tab-target="#home" class="active tab">Home</li>
+                <li data-tab-target="#pricing" class="tab">Pricing</li>
+              </ul>           
+              <div class="tab-content">
+                <div id="home" data-tab-content class="active">
+                  <input type="text" placeholder="New York, San Francisco, etc">
+                  <div class="property-type">
+                  <select name="property" class="property">
+                    <option class="placeholder" value="" disabled selected hidden>Select Property Type</option>
+                    <option value="House">House</option>
+                    <option value="Plot">Plot</option>
+                    <option value="Agricultural">Agricultural</option>
+                    <option value="Commercial">Commercial</option>
+                  </select>
+                </div>
+                <div class="room-type">
+                  <select name="room" class="room">
+                    <option class="placeholder" value="" disabled selected hidden>Select Rooms</option>
+                    <option value="House">1</option>
+                    <option value="Plot">2</option>
+                    <option value="Agricultural">3</option>
+                    <option value="Commercial">4</option>
+                  </select>
+                </div>
+                  <div class="filter-button">
+                    <img src="./assets/svgs/filter.svg" alt="filters">
+                    <button type="button">Advance Search</button>
+                  </div>
+                  <div class="search-button">
+                    <img src="./assets/svgs/search.svg" alt="search">
+                    <input type="button" value="search">
+                  </div>
+                </div>
+                <div id="pricing" data-tab-content>        
+                  <input type="text" placeholder="New York, San Francisco, etc">
+                  <div class="room-type">
+                  <select name="room" class="room">
+                    <option class="placeholder" value="" disabled selected hidden>Select Rooms</option>
+                    <option value="House">1</option>
+                    <option value="Plot">2</option>
+                    <option value="Agricultural">3</option>
+                    <option value="Commercial">4</option>
+                  </select>
+                </div>
+                <div class="property-type">
+                  <select name="property" class="property">
+                    <option class="placeholder" value="" disabled selected hidden>Select Property Type</option>
+                    <option value="House">House</option>
+                    <option value="Plot">Plot</option>
+                    <option value="Agricultural">Agricultural</option>
+                    <option value="Commercial">Commercial</option>
+                  </select>
+                </div>
+                  <div class="filter-button">
+                    <img src="./assets/svgs/filter.svg" alt="filters">
+                    <button type="button">Advance Search</button>
+                  </div>
+                  <div class="search-button">
+                    <img src="./assets/svgs/search.svg" alt="search">
+                    <input type="button" value="search">
+                  </div>
+                </div>    
+              </div>
+            </div>
+          </div>
+          <div class="tags">
+            <div class="customer">
+              <div class="image-wrapper">
+                <img src="./assets/images/HC-1.png" alt="happy customer">
+                <img src="./assets/images/HC-2.png" alt="happy customer">
+                <img src="./assets/images/HC-3.png" alt="happy customer">
+                <img src="./assets/images/HC-4.png" alt="happy customer">
+                <img src="./assets/images/HC-5.png" alt="happy customer">
+                <img src="./assets/images/HC-6.png" alt="happy customer">
+              </div>
+              <h4>72k+ Happy 
+                Customers</h4>
+            </div>
+            <div class="listing">
+              <img src="./assets/images/nl.png" alt="new listing">
+              <h4>200+ New 
+                Listings Everyday</h4>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

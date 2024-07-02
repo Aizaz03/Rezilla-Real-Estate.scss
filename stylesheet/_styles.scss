@@ -1,3 +1,4 @@
+@import "https://unpkg.com/jolty-ui/dist/jolty-ui.min.css";
 body {
   margin: 0;
   padding: 0;
@@ -68,64 +69,414 @@ body {
       }
     }
   }
-  .header {
-    max-width: 77.5rem;
-    width: 100%;
-    margin: 0 auto;
-    @include flex(space-between, center, 0.625rem);
-    padding: 0.7188rem 0;
-    .menu-listing {
-      @include flex(start, center, 1rem);
-      padding-left: 0;
-      li {
-        list-style: none;
-        a {
-          text-decoration: none;
-          @include font-styles($mainTextColor, 1rem, 1.5rem, 500, 0, start);
-          padding: 0.4375rem 1rem;
-          &:hover {
-            background-color: $menuHover;
+  .listing {
+    position: relative;
+
+    .header {
+      background-color: $secondaryColor;
+      max-width: 90rem;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0.7188rem 0;
+      .content {
+        @include flex(space-between, center, 0.625rem);
+        max-width: 77.5rem;
+        width: 100%;
+        margin: 0 auto;
+
+        .menu-listing {
+          @include flex(start, center, 1rem);
+          padding-left: 0;
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+              @include font-styles($mainTextColor, 1rem, 1.5rem, 500, 0, start);
+              padding: 0.4375rem 1rem;
+              &:hover {
+                background-color: $menuHover;
+                border-radius: 1.875rem;
+              }
+            }
+          }
+        }
+        .logo {
+          img {
+            width: 7.75rem;
+            height: 3.125rem;
+          }
+        }
+        .button-listing {
+          @include flex(start, center, 1.25rem);
+          .login-button {
+            @include flex(start, center, 0.625rem);
+            padding: 0 0.4375rem;
+            img {
+              width: 1.125rem;
+              height: 1.125rem;
+            }
+            input {
+              background: transparent !important;
+              border: none !important;
+              @include font-styles($mainTextColor, 16px, 1.5rem, 500, 0, start);
+              padding: 0;
+            }
+          }
+          .listing-button {
+            @include flex(start, center, 0.625rem);
+            background-color: $mainBgColor;
             border-radius: 1.875rem;
+            padding: 0.8125rem 1.9375rem;
+            img {
+              width: 1.125rem;
+              height: 1.125rem;
+            }
+            input {
+              background: transparent !important;
+              border: none !important;
+              @include font-styles(
+                $secondaryColor,
+                16px,
+                1.5rem,
+                500,
+                0,
+                start
+              );
+              padding: 0;
+            }
           }
         }
       }
     }
-    .logo {
-      img {
-        width: 7.75rem;
-        height: 3.125rem;
+    .main-banner {
+      > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: -1;
       }
-    }
-    .button-listing {
-      @include flex(start, center, 1.25rem);
-      .login-button {
-        @include flex(start, center, 0.625rem);
-        padding: 0 0.4375rem;
-        img {
-          width: 1.125rem;
-          height: 1.125rem;
+      .main-content {
+        @include flex(start, end, 7.5rem);
+        margin: 5.5625rem auto 0;
+        max-width: 1120px;
+        .home-finding {
+          max-width: 580px;
+          width: 100%;
+          span {
+            @include font-styles(
+              $lightBlue,
+              1.2125rem,
+              1.8188rem,
+              500,
+              0.15em,
+              left
+            );
+          }
+          h1 {
+            margin-block-start: 1.25rem;
+            margin-block-end: 1.25rem;
+          }
+          p {
+            margin-block-start: 0;
+            margin-block-end: 1.25rem;
+          }
+          .slideshow-container {
+            max-width: 36.25rem;
+            width: 100%;
+            position: relative;
+
+            > img {
+              position: absolute;
+              top: -1.9375rem;
+              right: 0.625rem;
+              z-index: -1;
+            }
+          }
+          .mySlides {
+            width: 540px;
+            height: 340px;
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 1.25rem;
+            }
+          }
+
+          .prev,
+          .next {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            top: calc(50% - 10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 2.5rem;
+            width: 2.5rem;
+            transition: 0.6s ease;
+          }
+
+          .next {
+            right: 13px;
+            width: 2.5rem;
+            height: 2.5rem;
+            img {
+              max-width: none !important;
+            }
+          }
+          .prev {
+            left: -18px;
+            width: 2.5rem;
+            height: 2.5rem;
+            img {
+              max-width: none !important;
+            }
+          }
+
+          .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+          }
+          .slide-bar {
+            display: flex;
+            gap: 2.5rem;
+            margin: -0.75rem 0 0 0.625rem;
+            .dot {
+              cursor: pointer;
+              height: 4px;
+              width: 100px;
+              background-color: $secondaryColor;
+              border-radius: 20px;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+              a {
+              }
+            }
+          }
+          .active,
+          .dot:hover {
+            background-color: $lightBlue;
+          }
         }
-        input {
-          background: transparent !important;
-          border: none !important;
-          @include font-styles($mainTextColor, 16px, 1.5rem, 500, 0, start);
-          padding: 0;
+        .search-form {
+          max-width: 26.25rem;
+          box-shadow: 10px 30px 50px 0px $formShadow;
+          width: 100%;
+          border-radius: 1.25rem;
+          background: $secondaryColor;
+          [data-tab-content] {
+            display: none;
+          }
+
+          .active[data-tab-content] {
+            display: block;
+          }
+
+          body {
+            padding: 0;
+            margin: 0;
+          }
+
+          .tabs {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            border-bottom: 1px solid $lightGrey;
+            @include font-styles($lightGrey, 1rem, 1.5rem, 500, 0, center);
+          }
+
+          .tab {
+            cursor: pointer;
+            margin-top: 2rem;
+            padding-bottom: 1.2813rem;
+          }
+
+          .tab.active {
+            border-bottom: 2px solid $lightBlue;
+            color: $lightBlue;
+          }
+
+          .tab-content {
+            padding: 2.9688rem 2.5rem 3.5rem;
+
+            input[type="text"] {
+              width: 100%;
+              background-color: $inputColor;
+              border-radius: 20px;
+              padding: 1.0938rem 1.25rem;
+
+              &:focus {
+                outline: none;
+              }
+            }
+            .property-type {
+              margin-top: 1.875rem;
+              position: relative;
+              display: block;
+              &::after {
+                content: "";
+                background-image: url(../assets/svgs/arrow-down.svg); /* Unicode character for down arrow */
+                position: absolute;
+                height: 20px;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 20px;
+                top: 50%;
+                right: 15px;
+                transform: translateY(-50%);
+                pointer-events: none;
+                color: $lightGrey;
+                font-size: 16px;
+                line-height: 1.25rem;
+              }
+              .property {
+                width: 100%;
+                background-color: $inputColor;
+                border-radius: 20px;
+                padding: 1.0938rem 1.25rem;
+                appearance: none;
+                color: $lightGrey;
+                &:focus {
+                  outline: none;
+                }
+              }
+            }
+            .room-type {
+              margin-top: 1.875rem;
+              position: relative;
+              display: block;
+              &::after {
+                content: "";
+                background-image: url(../assets/svgs/arrow-down.svg); /* Unicode character for down arrow */
+                position: absolute;
+                height: 20px;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 20px;
+                top: 50%;
+                right: 15px;
+                transform: translateY(-50%);
+                pointer-events: none;
+                color: $lightGrey;
+                font-size: 16px;
+                line-height: 1.25rem;
+              }
+              .room {
+                width: 100%;
+                background-color: $inputColor;
+                border-radius: 20px;
+                padding: 1.0938rem 1.25rem;
+                appearance: none;
+                color: $lightGrey;
+
+                &:focus {
+                  outline: none;
+                }
+              }
+            }
+            .filter-button {
+              margin-top: 1.25rem;
+              @include flex(start, center, 0.625rem);
+              button {
+                background: transparent;
+                border: none;
+                @include font-styles(
+                  $mainBgColor,
+                  0.8313rem,
+                  1.375rem,
+                  400,
+                  0,
+                  left
+                );
+              }
+            }
+            .search-button {
+              margin-top: 3.75rem;
+              @include flex(center, center, 0.625rem);
+              background-color: $mainBgColor;
+              width: 21.25rem;
+              height: 3.75rem;
+              border-radius: 3.125rem;
+              input {
+                @include font-styles(
+                  $secondaryColor,
+                  0.8313rem,
+                  1.375rem,
+                  400,
+                  0,
+                  center
+                );
+              }
+            }
+          }
         }
       }
-      .listing-button {
-        @include flex(start, center, 0.625rem);
-        background-color: $mainBgColor;
-        border-radius: 1.875rem;
-        padding: 0.8125rem 1.9375rem;
-        img {
-          width: 1.125rem;
-          height: 1.125rem;
+      .tags {
+        @include flex(center, center, 1.875rem);
+        bottom: -9.8125rem;
+        position: absolute;
+        left: 31.25rem;
+
+        .customer {
+          background: $secondaryColor;
+          box-shadow: 10px 30px 50px 0px $formShadow;
+          @include flex(start, center, 0.625rem);
+          width: 22.5rem;
+          height: 100px;
+          position: relative;
+          border-radius: 3.125rem;
+          padding: 0 2.25rem;
+
+          .image-wrapper {
+            @include flex(start, start, 0);
+            width: 9.75rem;
+            img {
+              &:nth-child(2) {
+                position: absolute;
+                left: 59px;
+              }
+              &:nth-child(3) {
+                position: absolute;
+                left: 82px;
+              }
+              &:nth-child(4) {
+                position: absolute;
+                left: 105px;
+              }
+              &:nth-child(5) {
+                position: absolute;
+                left: 130px;
+              }
+              &:nth-child(6) {
+                position: absolute;
+                left: 155px;
+              }
+            }
+          }
+          h4 {
+            width: 122px;
+          }
         }
-        input {
-          background: transparent !important;
-          border: none !important;
-          @include font-styles($secondaryColor, 16px, 1.5rem, 500, 0, start);
-          padding: 0;
+        .listing {
+          background: $secondaryColor;
+          box-shadow: 10px 30px 50px 0px $formShadow;
+          @include flex(start, center, 0.625rem);
+          width: 22.5rem;
+          height: 100px;
+          border-radius: 3.125rem;
+          padding: 0 2.375rem;
+          h4 {
+            width: 10.875rem;
+          }
         }
       }
     }
