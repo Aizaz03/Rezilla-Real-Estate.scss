@@ -71,7 +71,7 @@ body {
   }
   .listing {
     position: relative;
-
+    height: 58.25rem;
     .header {
       background-color: $secondaryColor;
       max-width: 90rem;
@@ -422,9 +422,9 @@ body {
       }
       .tags {
         @include flex(center, center, 1.875rem);
-        bottom: -9.8125rem;
-        position: absolute;
-        left: 31.25rem;
+        max-width: 90rem;
+        width: 46.875rem;
+        margin: 4.375rem auto;
 
         .customer {
           background: $secondaryColor;
@@ -478,6 +478,32 @@ body {
             width: 10.875rem;
           }
         }
+      }
+    }
+  }
+  .companies {
+    max-width: 72.5rem;
+    width: 100%;
+    margin: 4.25rem auto 0;
+    padding: 3.125rem 0 2.5rem;
+    position: relative;
+    > img {
+      position: absolute;
+      top: -0.625rem;
+      left: 2.75rem;
+    }
+    h5 {
+      text-align: center;
+      color: $lightGrey;
+    }
+    .image-wrapper {
+      @include flex(space-between, center, 0.625rem);
+      margin-top: 60px;
+
+      img {
+        filter: grayscale(100%);
+        width: 7.5rem;
+        height: auto;
       }
     }
   }

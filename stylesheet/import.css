@@ -18,6 +18,15 @@ h4 {
   text-align: left;
 }
 
+h5 {
+  color: #0b090a;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-align: left;
+}
+
 p {
   color: #808080;
   font-size: 1rem;
@@ -113,6 +122,7 @@ body .top-bar .content .contact .email span {
 }
 body .listing {
   position: relative;
+  height: 58.25rem;
 }
 body .listing .header {
   background-color: #fff;
@@ -492,9 +502,9 @@ body .listing .main-banner .tags {
   justify-content: center;
   align-items: center;
   gap: 1.875rem;
-  bottom: -9.8125rem;
-  position: absolute;
-  left: 31.25rem;
+  max-width: 90rem;
+  width: 46.875rem;
+  margin: 4.375rem auto;
 }
 body .listing .main-banner .tags .customer {
   background: #fff;
@@ -556,4 +566,33 @@ body .listing .main-banner .tags .listing {
 }
 body .listing .main-banner .tags .listing h4 {
   width: 10.875rem;
+}
+body .companies {
+  max-width: 72.5rem;
+  width: 100%;
+  margin: 4.25rem auto 0;
+  padding: 3.125rem 0 2.5rem;
+  position: relative;
+}
+body .companies > img {
+  position: absolute;
+  top: -0.625rem;
+  left: 2.75rem;
+}
+body .companies h5 {
+  text-align: center;
+  color: #808080;
+}
+body .companies .image-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  margin-top: 60px;
+}
+body .companies .image-wrapper img {
+  filter: grayscale(100%);
+  width: 7.5rem;
+  height: auto;
 }/*# sourceMappingURL=import.css.map */

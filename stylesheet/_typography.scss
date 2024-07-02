@@ -7,6 +7,9 @@ h1 {
 h4 {
   @include font-styles($mainHeading, 1.2125rem, 1.8188rem, 500, 0, left);
 }
+h5 {
+  @include font-styles($mainHeading, 1rem, 1.5rem, 500, 0, left);
+}
 
 p {
   @include font-styles($lightGrey, 1rem, 1.5rem, 400, 0, left);
