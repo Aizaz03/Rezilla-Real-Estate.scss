@@ -4,6 +4,10 @@ h1 {
   @include font-styles($mainHeading, 57.3px, 4.0625rem, 600, 0, left);
 }
 
+h2 {
+  @include font-styles($mainHeading, 2.4875rem, 2.9375rem, 600, 0, left);
+}
+
 h4 {
   @include font-styles($mainHeading, 1.2125rem, 1.8188rem, 500, 0, left);
 }

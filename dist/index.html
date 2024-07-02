@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./stylesheet/import.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.js"></script>
     <title>Rezillla-Real Estate</title>
   </head>
@@ -69,42 +63,60 @@
               Integer a dolor eu sapien sodales vulputate ac in purus.
             </p>
             <div class="slideshow-container">
-              <img src="./assets/svgs/circle.svg" alt="circle">
-            
+              <img src="./assets/svgs/circle.svg" alt="circle" />
+
               <div class="mySlides">
-                <img src="https://www.w3schools.com/howto/img_fjords_wide.jpg" >
+                <img
+                  src="https://www.w3schools.com/howto/img_fjords_wide.jpg"
+                />
               </div>
-            
+
               <div class="mySlides">
-                <img src="https://www.w3schools.com/howto/img_lights_wide.jpg">
+                <img
+                  src="https://www.w3schools.com/howto/img_lights_wide.jpg"
+                />
               </div>
-            
+
               <div class="mySlides">
-                <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg">
+                <img
+                  src="https://www.w3schools.com/howto/img_mountains_wide.jpg"
+                />
               </div>
-            
-              <a class="prev" onclick="plusSlides(-1)"><img src="./assets/svgs/arrow-left.svg" alt="arrow-left"></a>
-              <a class="next" onclick="plusSlides(1)"><img src="./assets/svgs/arrow-right.svg" alt="arrow-right"></a>
+
+              <a class="prev" onclick="plusSlides(-1)"
+                ><img src="./assets/svgs/arrow-left.svg" alt="arrow-left"
+              /></a>
+              <a class="next" onclick="plusSlides(1)"
+                ><img src="./assets/svgs/arrow-right.svg" alt="arrow-right"
+              /></a>
             </div>
-            <br>           
+            <br />
             <div class="slide-bar">
               <span class="dot" onclick="currentSlide(1)"></span>
               <span class="dot" onclick="currentSlide(2)"></span>
               <span class="dot" onclick="currentSlide(3)"></span>
               <span class="dot" onclick="currentSlide(4)"></span>
             </div>
-            </div>
-            <div class="search-form">
-              <ul class="tabs">
-                <li data-tab-target="#home" class="active tab">Home</li>
-                <li data-tab-target="#pricing" class="tab">Pricing</li>
-              </ul>           
-              <div class="tab-content">
-                <div id="home" data-tab-content class="active">
-                  <input type="text" placeholder="New York, San Francisco, etc">
-                  <div class="property-type">
+          </div>
+          <div class="search-form">
+            <ul class="tabs">
+              <li data-tab-target="#home" class="active tab">Home</li>
+              <li data-tab-target="#pricing" class="tab">Pricing</li>
+            </ul>
+            <div class="tab-content">
+              <div id="home" data-tab-content class="active">
+                <input type="text" placeholder="New York, San Francisco, etc" />
+                <div class="property-type">
                   <select name="property" class="property">
-                    <option class="placeholder" value="" disabled selected hidden>Select Property Type</option>
+                    <option
+                      class="placeholder"
+                      value=""
+                      disabled
+                      selected
+                      hidden
+                    >
+                      Select Property Type
+                    </option>
                     <option value="House">House</option>
                     <option value="Plot">Plot</option>
                     <option value="Agricultural">Agricultural</option>
@@ -113,27 +125,43 @@
                 </div>
                 <div class="room-type">
                   <select name="room" class="room">
-                    <option class="placeholder" value="" disabled selected hidden>Select Rooms</option>
+                    <option
+                      class="placeholder"
+                      value=""
+                      disabled
+                      selected
+                      hidden
+                    >
+                      Select Rooms
+                    </option>
                     <option value="House">1</option>
                     <option value="Plot">2</option>
                     <option value="Agricultural">3</option>
                     <option value="Commercial">4</option>
                   </select>
                 </div>
-                  <div class="filter-button">
-                    <img src="./assets/svgs/filter.svg" alt="filters">
-                    <button type="button">Advance Search</button>
-                  </div>
-                  <div class="search-button">
-                    <img src="./assets/svgs/search.svg" alt="search">
-                    <input type="button" value="search">
-                  </div>
+                <div class="filter-button">
+                  <img src="./assets/svgs/filter.svg" alt="filters" />
+                  <button type="button">Advance Search</button>
                 </div>
-                <div id="pricing" data-tab-content>        
-                  <input type="text" placeholder="New York, San Francisco, etc">
-                  <div class="room-type">
+                <div class="search-button">
+                  <img src="./assets/svgs/search.svg" alt="search" />
+                  <input type="button" value="search" />
+                </div>
+              </div>
+              <div id="pricing" data-tab-content>
+                <input type="text" placeholder="New York, San Francisco, etc" />
+                <div class="room-type">
                   <select name="room" class="room">
-                    <option class="placeholder" value="" disabled selected hidden>Select Rooms</option>
+                    <option
+                      class="placeholder"
+                      value=""
+                      disabled
+                      selected
+                      hidden
+                    >
+                      Select Rooms
+                    </option>
                     <option value="House">1</option>
                     <option value="Plot">2</option>
                     <option value="Agricultural">3</option>
@@ -142,56 +170,107 @@
                 </div>
                 <div class="property-type">
                   <select name="property" class="property">
-                    <option class="placeholder" value="" disabled selected hidden>Select Property Type</option>
+                    <option
+                      class="placeholder"
+                      value=""
+                      disabled
+                      selected
+                      hidden
+                    >
+                      Select Property Type
+                    </option>
                     <option value="House">House</option>
                     <option value="Plot">Plot</option>
                     <option value="Agricultural">Agricultural</option>
                     <option value="Commercial">Commercial</option>
                   </select>
                 </div>
-                  <div class="filter-button">
-                    <img src="./assets/svgs/filter.svg" alt="filters">
-                    <button type="button">Advance Search</button>
-                  </div>
-                  <div class="search-button">
-                    <img src="./assets/svgs/search.svg" alt="search">
-                    <input type="button" value="search">
-                  </div>
-                </div>    
+                <div class="filter-button">
+                  <img src="./assets/svgs/filter.svg" alt="filters" />
+                  <button type="button">Advance Search</button>
+                </div>
+                <div class="search-button">
+                  <img src="./assets/svgs/search.svg" alt="search" />
+                  <input type="button" value="search" />
+                </div>
               </div>
             </div>
           </div>
-          <div class="tags">
-            <div class="customer">
-              <div class="image-wrapper">
-                <img src="./assets/images/HC-1.png" alt="happy customer">
-                <img src="./assets/images/HC-2.png" alt="happy customer">
-                <img src="./assets/images/HC-3.png" alt="happy customer">
-                <img src="./assets/images/HC-4.png" alt="happy customer">
-                <img src="./assets/images/HC-5.png" alt="happy customer">
-                <img src="./assets/images/HC-6.png" alt="happy customer">
-              </div>
-              <h4>72k+ Happy 
-                Customers</h4>
+        </div>
+        <div class="tags">
+          <div class="customer">
+            <div class="image-wrapper">
+              <img src="./assets/images/HC-1.png" alt="happy customer" />
+              <img src="./assets/images/HC-2.png" alt="happy customer" />
+              <img src="./assets/images/HC-3.png" alt="happy customer" />
+              <img src="./assets/images/HC-4.png" alt="happy customer" />
+              <img src="./assets/images/HC-5.png" alt="happy customer" />
+              <img src="./assets/images/HC-6.png" alt="happy customer" />
             </div>
-            <div class="listing">
-              <img src="./assets/images/nl.png" alt="new listing">
-              <h4>200+ New 
-                Listings Everyday</h4>
+            <h4>72k+ Happy Customers</h4>
+          </div>
+          <div class="listing">
+            <img src="./assets/images/nl.png" alt="new listing" />
+            <h4>200+ New Listings Everyday</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="companies">
+      <img src="./assets/svgs/companies-circle.svg" alt="circle" />
+      <h5>Trusted by 100+ Companies across the globe!</h5>
+      <div class="image-wrapper">
+        <img src="./assets/images/google.png" alt="google" />
+        <img src="./assets/images/amazon.png" alt="amazon" />
+        <img src="./assets/images/logitech.png" alt="logitech" />
+        <img src="./assets/images/samsung.png" alt="samsung" />
+        <img src="./assets/images/spotify.png" alt="spotify" />
+        <img src="./assets/images/netflix.png" alt="netflix" />
+      </div>
+    </div>
+    <div class="property-locator">
+      <div class="content">
+        <span>WHO ARE WE</span>
+        <h2>Assisting individuals in locating the appropriate real estate.</h2>
+        <p>
+          Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec
+          dignissim purus. Nulla convallis ipsum molestie nibh malesuada, ac
+          malesuada leo volutpat.
+        </p>
+        <div class="card-listing">
+          <div class="card">
+            <img src="./assets/svgs/signal.svg" alt="signal" />
+            <div class="content">
+              <h4>Donec porttitor euismod</h4>
+              <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/svgs/profile-2.svg" alt="profile" />
+            <div class="content">
+              <h4>Donec porttitor euismod</h4>
+              <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="companies">
-        <img src="./assets/svgs/companies-circle.svg" alt="circle">
-        <h5>Trusted by 100+ Companies across the globe! </h5>
-        <div class="image-wrapper">
-          <img src="./assets/images/google.png" alt="google">
-          <img src="./assets/images/amazon.png" alt="amazon">
-          <img src="./assets/images/logitech.png" alt="logitech">
-          <img src="./assets/images/samsung.png" alt="samsung">
-          <img src="./assets/images/spotify.png" alt="spotify">
-          <img src="./assets/images/netflix.png" alt="netflix">
+      <div class="image-wrapper">
+        <img
+          class="real-estate"
+          src="./assets/svgs/real-estate-label.svg"
+          alt="real-estate-label"
+        />
+        <div class="single-img">
+          <img src="./assets/images/pool.png" alt="pool" />
+        </div>
+        <div class="img-column">
+          <img
+            class="mini-circle"
+            src="./assets/svgs/min-circle.svg"
+            alt="min-circle"
+          />
+          <img src="./assets/images/bedroom.jpg" alt="bedroom" />
+          <img src="./assets/images/livingroom.jpg" alt="livingroom" />
         </div>
       </div>
     </div>
