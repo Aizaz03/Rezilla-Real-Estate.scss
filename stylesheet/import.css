@@ -21,6 +21,17 @@ h2 {
   margin-block-end: 0;
 }
 
+h3 {
+  color: #0b090a;
+  font-size: 1.725rem;
+  line-height: 2.5875rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-align: left;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 h4 {
   color: #0b090a;
   font-size: 1.2125rem;
@@ -1159,4 +1170,49 @@ body {
   position: absolute;
   bottom: -10rem;
   right: 4.0625rem;
+}
+
+.experts {
+  max-width: 63.3125rem;
+  margin: 0 auto 11.25rem;
+  width: 100%;
+}
+.experts h4 {
+  color: #4361ee;
+  text-align: center;
+}
+.experts h2 {
+  margin-top: 0.9375rem;
+  text-align: center;
+}
+.experts .card-listing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3.9375rem;
+  margin-top: 6.25rem;
+}
+.experts .card-listing .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+.experts .card-listing .card img {
+  border-radius: 120px 40px 40px 40px;
+  width: 12.5rem;
+  height: 17.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.experts .card-listing .card h3 {
+  margin-top: 2.62px;
+  text-align: center;
+}
+.experts .card-listing .card h5 {
+  text-align: center;
+  color: #4361ee;
+  margin-top: 0.125rem;
 }/*# sourceMappingURL=import.css.map */

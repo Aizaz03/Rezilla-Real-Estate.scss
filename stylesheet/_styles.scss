@@ -1009,3 +1009,39 @@ body {
     }
   }
 }
+.experts {
+  max-width: 63.3125rem;
+  margin: 0 auto 11.25rem;
+  width: 100%;
+
+  h4 {
+    color: $lightBlue;
+    text-align: center;
+  }
+  h2 {
+    margin-top: 0.9375rem;
+    text-align: center;
+  }
+  .card-listing {
+    @include flex(center, center, 3.9375rem);
+    margin-top: 6.25rem;
+    .card {
+      @include flex(center, center, 0.625rem, column);
+      img {
+        border-radius: 120px 40px 40px 40px;
+        width: 12.5rem;
+        height: 17.5rem;
+        object-fit: cover;
+      }
+      h3 {
+        margin-top: 2.62px;
+        text-align: center;
+      }
+      h5 {
+        text-align: center;
+        color: $lightBlue;
+        margin-top: 0.125rem;
+      }
+    }
+  }
+}
