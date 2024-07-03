@@ -18,3 +18,8 @@ $discountText: #00ce3a;
 $primaryBgColor: #d4d4d4;
 $primaryShadow: #4361ee66;
 $secondaryShadow: #00000008;
+$primaryGradient: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 0) 0%,
+  rgba(0, 0, 0, 0.6) 100%
+);
