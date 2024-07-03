@@ -1215,4 +1215,108 @@ body {
   text-align: center;
   color: #4361ee;
   margin-top: 0.125rem;
+}
+
+.blogs {
+  background: #3a0ca3;
+}
+.blogs .blog-content {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 6.875rem 0 6.25rem;
+  width: 100%;
+}
+.blogs .blog-content h4 {
+  text-align: center;
+  color: #fff;
+}
+.blogs .blog-content h2 {
+  margin-top: 0.9375rem;
+  text-align: center;
+  color: #fff;
+}
+.blogs .blog-content .card-listing {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 3.125rem;
+}
+.blogs .blog-content .card-listing .card .image-wrapper {
+  position: relative;
+}
+.blogs .blog-content .card-listing .card .image-wrapper img {
+  width: 21.25rem;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.875rem;
+}
+.blogs .blog-content .card-listing .card .image-wrapper .overlay {
+  width: 21.25rem;
+  height: 15rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3019607843);
+  top: 0;
+  left: 0;
+  border-radius: 1.875rem;
+}
+.blogs .blog-content .card-listing .card .image-wrapper .label {
+  position: absolute;
+  top: 0;
+  left: 3.125rem;
+  width: 3.0625rem;
+  height: 3.125rem;
+  border-radius: 0px 0px 10px 10px;
+  background: #fff;
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.blogs .blog-content .card-listing .card .image-wrapper .label p {
+  margin-top: 0;
+  color: #808080;
+  text-align: center;
+}
+.blogs .blog-content .card-listing .card .image-wrapper .label p span {
+  color: #000;
+}
+.blogs .blog-content .card-listing .card h3 {
+  margin-top: 1.25rem;
+  color: #fff;
+}
+.blogs .blog-content .card-listing .card p {
+  margin-top: 0.625rem;
+  color: #d4d4d4 !important;
+}
+.blogs .blog-content .card-listing .card a {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  gap: 0;
+  margin-top: 0.625rem;
+}
+.blogs .blog-content .card-listing .card a img {
+  height: 3.125rem;
+  width: 3.125rem;
+}
+.blogs .blog-content .pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4375rem;
+  margin-top: 4.375rem;
+}
+.blogs .blog-content .pagination span {
+  height: 0.25rem;
+  border-radius: 10px;
+  width: 6.25rem;
+  background-color: #fff;
+  opacity: 50%;
+  display: block;
+}
+.blogs .blog-content .pagination span:hover {
+  background: #fff;
+  opacity: 100%;
 }/*# sourceMappingURL=import.css.map */

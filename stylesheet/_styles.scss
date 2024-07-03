@@ -1045,3 +1045,95 @@ body {
     }
   }
 }
+.blogs {
+  background: $mainBgColor;
+  .blog-content {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 6.875rem 0 6.25rem;
+    width: 100%;
+    h4 {
+      text-align: center;
+      color: $secondaryColor;
+    }
+    h2 {
+      margin-top: 0.9375rem;
+      text-align: center;
+      color: $secondaryColor;
+    }
+    .card-listing {
+      margin-top: 5rem;
+      @include flex(start, start, 3.125rem);
+      .card {
+        .image-wrapper {
+          position: relative;
+          img {
+            width: 21.25rem;
+            height: 15rem;
+            object-fit: cover;
+            border-radius: 1.875rem;
+          }
+          .overlay {
+            width: 21.25rem;
+            height: 15rem;
+            position: absolute;
+            background-color: $primaryOverlay;
+            top: 0;
+            left: 0;
+            border-radius: 1.875rem;
+          }
+          .label {
+            position: absolute;
+            top: 0;
+            left: 3.125rem;
+            width: 3.0625rem;
+            height: 3.125rem;
+            border-radius: 0px 0px 10px 10px;
+            background: $secondaryColor;
+            box-shadow: 4px 4px 15px 0px $labelShadow;
+            p {
+              margin-top: 0;
+              color: $lightGrey;
+              text-align: center;
+              span {
+                color: $primaryColor;
+              }
+            }
+          }
+        }
+        h3 {
+          margin-top: 1.25rem;
+          color: $secondaryColor;
+        }
+        p {
+          margin-top: 0.625rem;
+          color: $primaryBgColor !important;
+        }
+        a {
+          @include flex(end, end, 0);
+          margin-top: 0.625rem;
+          img {
+            height: 3.125rem;
+            width: 3.125rem;
+          }
+        }
+      }
+    }
+    .pagination {
+      @include flex(center, center, 2.4375rem);
+      margin-top: 4.375rem;
+      span {
+        height: 0.25rem;
+        border-radius: 10px;
+        width: 6.25rem;
+        background-color: $secondaryColor;
+        opacity: 50%;
+        display: block;
+        &:hover {
+          background: $secondaryColor;
+          opacity: 100%;
+        }
+      }
+    }
+  }
+}
