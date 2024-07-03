@@ -49,6 +49,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins", "sans-serif";
+  position: relative;
 }
 
 .top-bar {
@@ -740,4 +741,226 @@ body {
   box-shadow: 4px 10px 30px 0px rgba(0, 0, 0, 0.1490196078);
   width: 17.3125rem;
   height: 11.25rem;
+}
+
+.latest-properties {
+  margin-top: 12.4375rem;
+}
+.latest-properties .content {
+  max-width: 70rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.latest-properties .content .content-listing {
+  width: 29.125rem;
+}
+.latest-properties .content .content-listing span {
+  color: #4361ee;
+  font-size: 1.2125rem;
+  line-height: 1.8188rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-align: left;
+}
+.latest-properties .content .content-listing p {
+  line-height: 1.625rem;
+}
+.latest-properties .content .button-listing {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  gap: 20px;
+}
+.latest-properties .content .button-listing button {
+  background-color: transparent;
+  border: 1px solid #3a0ca3;
+  padding: 11.5px 1.875rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  border-radius: 1.875rem;
+  color: #3a0ca3;
+}
+.latest-properties .content .button-listing button:hover {
+  background: #3a0ca3;
+  color: #fff;
+}
+.latest-properties .card-listing {
+  margin: 3.125rem 0 0 10rem;
+}
+.latest-properties .card-listing swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.latest-properties .card-listing swiper-container swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21.25rem !important;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(2) .card .image-wrapper .label {
+  width: 10.5625rem;
+  background: #d7eeff;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(2) .card .image-wrapper .label img {
+  width: 1.25rem;
+  height: 1.3375rem;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(2) .card .image-wrapper .label h5 {
+  color: #119bff;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(3) .card .image-wrapper .label {
+  width: 12.8125rem;
+  background: #f1fff1;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(3) .card .image-wrapper .label img {
+  width: 0.75rem;
+  height: 1.25rem;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(3) .card .image-wrapper .label h5 {
+  color: #00ce3a;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(6) .card .image-wrapper .label {
+  width: 12.8125rem;
+  background: #f1fff1;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(6) .card .image-wrapper .label img {
+  width: 0.75rem;
+  height: 1.25rem;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(6) .card .image-wrapper .label h5 {
+  color: #00ce3a;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(5) .card .image-wrapper .label {
+  width: 10.5625rem;
+  background: #d7eeff;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(5) .card .image-wrapper .label img {
+  width: 1.25rem;
+  height: 1.3375rem;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(5) .card .image-wrapper .label h5 {
+  color: #119bff;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(8) .card .image-wrapper .label {
+  width: 10.5625rem;
+  background: #d7eeff;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(8) .card .image-wrapper .label img {
+  width: 1.25rem;
+  height: 1.3375rem;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(8) .card .image-wrapper .label h5 {
+  color: #119bff;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(9) .card .image-wrapper .label {
+  width: 12.8125rem;
+  background: #f1fff1;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(9) .card .image-wrapper .label img {
+  width: 0.75rem;
+  height: 1.25rem;
+}
+.latest-properties .card-listing swiper-container swiper-slide:nth-child(9) .card .image-wrapper .label h5 {
+  color: #00ce3a;
+}
+.latest-properties .card-listing swiper-container swiper-slide .card .image-wrapper {
+  position: relative;
+}
+.latest-properties .card-listing swiper-container swiper-slide .card .image-wrapper img {
+  width: 21.25rem;
+  height: 21.25rem;
+}
+.latest-properties .card-listing swiper-container swiper-slide .card .image-wrapper .label {
+  width: 8.8125rem;
+  height: 2.6563rem;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background-color: #ffe1e1;
+  position: absolute;
+  bottom: 1.875rem;
+  left: 1.875rem;
+}
+.latest-properties .card-listing swiper-container swiper-slide .card .image-wrapper .label img {
+  width: 1.25rem;
+  height: 1.375rem;
+}
+.latest-properties .card-listing swiper-container swiper-slide .card .image-wrapper .label h5 {
+  color: #ff1111;
+}
+.latest-properties .card-listing swiper-container swiper-slide .card .card-content {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0.5125rem;
+}
+.latest-properties .card-listing swiper-container swiper-slide .card .card-content span {
+  color: #2b2b2b;
+  font-size: 1.725rem;
+  line-height: 2.5875rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-align: left;
+  display: block;
+}
+.latest-properties .card-listing swiper-container swiper-slide .card .card-content h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.latest-properties .card-listing swiper-container swiper-slide .card .card-content p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.latest-properties .card-listing swiper-container swiper-slide .card .card-content .listing {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 1.25rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.latest-properties .card-listing swiper-container swiper-slide .card .card-content .listing p:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0.625rem;
+}
+.latest-properties .card-listing swiper-container swiper-slide .card .card-content .listing p:nth-child(1) img {
+  height: 1.3125rem;
+  width: 1.875rem;
+}
+.latest-properties .card-listing swiper-container swiper-slide .card .card-content .listing p:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0.625rem;
+}
+.latest-properties .card-listing swiper-container swiper-slide .card .card-content .listing p:nth-child(2) img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.latest-properties .card-listing swiper-container swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=import.css.map */

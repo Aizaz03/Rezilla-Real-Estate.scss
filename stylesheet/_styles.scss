@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins", "sans-serif";
+  position: relative;
 }
 
 .top-bar {
@@ -604,6 +605,246 @@ body {
           width: 17.3125rem;
           height: 11.25rem;
         }
+      }
+    }
+  }
+}
+.latest-properties {
+  margin-top: 12.4375rem;
+  .content {
+    max-width: 70rem;
+    width: 100%;
+    margin: 0 auto;
+    @include flex(space-between, center, 20px);
+    .content-listing {
+      width: 29.125rem;
+      span {
+        @include font-styles(
+          $lightBlue,
+          1.2125rem,
+          1.8188rem,
+          500,
+          0.15em,
+          left
+        );
+      }
+      p {
+        line-height: 1.625rem;
+      }
+    }
+    .button-listing {
+      @include flex(end, end, 20px);
+      button {
+        background-color: transparent;
+        border: 1px solid $mainBgColor;
+        padding: 11.5px 1.875rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+        border-radius: 1.875rem;
+        color: $mainBgColor;
+
+        &:hover {
+          background: $mainBgColor;
+          color: $secondaryColor;
+        }
+      }
+    }
+  }
+  .card-listing {
+    margin: 3.125rem 0 0 10rem;
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+
+      swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 21.25rem !important;
+
+        &:nth-child(2) {
+          .card {
+            .image-wrapper {
+              .label {
+                width: 10.5625rem;
+                background: $listingLabel;
+                img {
+                  width: 1.25rem;
+                  height: 1.3375rem;
+                }
+                h5 {
+                  color: $listingText;
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(3) {
+          .card {
+            .image-wrapper {
+              .label {
+                width: 12.8125rem;
+                background: $discountLabel;
+                img {
+                  width: 0.75rem;
+                  height: 1.25rem;
+                }
+                h5 {
+                  color: $discountText;
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(6) {
+          .card {
+            .image-wrapper {
+              .label {
+                width: 12.8125rem;
+                background: $discountLabel;
+                img {
+                  width: 0.75rem;
+                  height: 1.25rem;
+                }
+                h5 {
+                  color: $discountText;
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(5) {
+          .card {
+            .image-wrapper {
+              .label {
+                width: 10.5625rem;
+                background: $listingLabel;
+                img {
+                  width: 1.25rem;
+                  height: 1.3375rem;
+                }
+                h5 {
+                  color: $listingText;
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(8) {
+          .card {
+            .image-wrapper {
+              .label {
+                width: 10.5625rem;
+                background: $listingLabel;
+                img {
+                  width: 1.25rem;
+                  height: 1.3375rem;
+                }
+                h5 {
+                  color: $listingText;
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(9) {
+          .card {
+            .image-wrapper {
+              .label {
+                width: 12.8125rem;
+                background: $discountLabel;
+                img {
+                  width: 0.75rem;
+                  height: 1.25rem;
+                }
+                h5 {
+                  color: $discountText;
+                }
+              }
+            }
+          }
+        }
+        .card {
+          .image-wrapper {
+            position: relative;
+            img {
+              width: 21.25rem;
+              height: 21.25rem;
+            }
+            .label {
+              width: 8.8125rem;
+              height: 2.6563rem;
+              border-radius: 1.25rem;
+              @include flex(center, center, 0.625rem);
+              background-color: $popularLabel;
+              position: absolute;
+              bottom: 1.875rem;
+              left: 1.875rem;
+              img {
+                width: 1.25rem;
+                height: 1.375rem;
+              }
+              h5 {
+                color: $popularText;
+              }
+            }
+          }
+          .card-content {
+            margin-top: 1rem;
+            @include flex(start, start, 0.5125rem, column);
+            span {
+              @include font-styles(
+                $mainTextColor,
+                1.725rem,
+                2.5875rem,
+                600,
+                0,
+                left
+              );
+              display: block;
+            }
+            h4 {
+              margin-block-start: 0;
+              margin-block-end: 0;
+            }
+            p {
+              margin-block-start: 0;
+              margin-block-end: 0;
+            }
+            .listing {
+              @include flex(start, start, 1.25rem);
+              height: fit-content;
+              p {
+                &:nth-child(1) {
+                  @include flex(start, center, 0.625rem);
+                  img {
+                    height: 1.3125rem;
+                    width: 1.875rem;
+                  }
+                }
+                &:nth-child(2) {
+                  @include flex(start, center, 0.625rem);
+                  img {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
   }
