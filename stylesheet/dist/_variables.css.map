@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["_variables.scss"],"sourcesContent":["$topbarBgColor: #3a0ca3;\r\n$primaryColor: #000;\r\n$secondaryColor: #fff;\r\n"],"file":"_variables.css"}

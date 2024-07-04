@@ -3,9 +3,851 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheet/import.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Rezillla-Real Estate</title>
   </head>
   <body>
-    <h1>hello world</h1>
+    <div class="top-bar">
+      <div class="content">
+        <div class="location">
+          <img src="./assets/svgs/location.svg" alt="location" />
+          <span>Rezilla, 18 Grattan St, Brooklyn</span>
+        </div>
+        <div class="contact">
+          <div class="phone">
+            <img src="./assets/svgs/phone.svg" alt="phone" />
+            <span>+1 206-214-2298</span>
+          </div>
+          <div class="email">
+            <img src="./assets/svgs/mail.svg" alt="mail" />
+            <span>support@rezilla.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="listing">
+      <div class="header">
+        <div class="content">
+          <ul class="menu-listing">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Listing</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <div class="logo">
+            <img src="./assets/svgs/logo.svg" alt="logo" />
+          </div>
+          <div class="button-listing">
+            <div class="login-button">
+              <img src="./assets/svgs/profile.svg" alt="profile" />
+              <input type="button" value="Login/Register" />
+            </div>
+            <div class="listing-button">
+              <img src="./assets/svgs/home.svg" alt="home" />
+              <input type="button" value="Add Listing" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-banner">
+        <img src="./assets/svgs/bg-gradient.svg" alt="bg-gradient" />
+        <div class="main-content">
+          <div class="home-finding">
+            <span>REAL ESTATE</span>
+            <h1>Find a perfect home you love..!</h1>
+            <p>
+              Etiam eget elementum elit. Aenean dignissim dapibus vestibulum.
+              Integer a dolor eu sapien sodales vulputate ac in purus.
+            </p>
+            <div class="slideshow-container">
+              <img src="./assets/svgs/circle.svg" alt="circle" />
+
+              <div class="mySlides">
+                <img
+                  src="https://www.w3schools.com/howto/img_fjords_wide.jpg"
+                />
+              </div>
+
+              <div class="mySlides">
+                <img
+                  src="https://www.w3schools.com/howto/img_lights_wide.jpg"
+                />
+              </div>
+
+              <div class="mySlides">
+                <img
+                  src="https://www.w3schools.com/howto/img_mountains_wide.jpg"
+                />
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)"
+                ><img src="./assets/svgs/arrow-left.svg" alt="arrow-left"
+              /></a>
+              <a class="next" onclick="plusSlides(1)"
+                ><img src="./assets/svgs/arrow-right.svg" alt="arrow-right"
+              /></a>
+            </div>
+            <br />
+            <div class="slide-bar">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+          </div>
+          <div class="search-form">
+            <ul class="tabs">
+              <li data-tab-target="#home" class="active tab">Home</li>
+              <li data-tab-target="#pricing" class="tab">Pricing</li>
+            </ul>
+            <div class="tab-content">
+              <div id="home" data-tab-content class="active">
+                <input type="text" placeholder="New York, San Francisco, etc" />
+                <div class="property-type">
+                  <select name="property" class="property">
+                    <option
+                      class="placeholder"
+                      value=""
+                      disabled
+                      selected
+                      hidden
+                    >
+                      Select Property Type
+                    </option>
+                    <option value="House">House</option>
+                    <option value="Plot">Plot</option>
+                    <option value="Agricultural">Agricultural</option>
+                    <option value="Commercial">Commercial</option>
+                  </select>
+                </div>
+                <div class="room-type">
+                  <select name="room" class="room">
+                    <option
+                      class="placeholder"
+                      value=""
+                      disabled
+                      selected
+                      hidden
+                    >
+                      Select Rooms
+                    </option>
+                    <option value="House">1</option>
+                    <option value="Plot">2</option>
+                    <option value="Agricultural">3</option>
+                    <option value="Commercial">4</option>
+                  </select>
+                </div>
+                <div class="filter-button">
+                  <img src="./assets/svgs/filter.svg" alt="filters" />
+                  <button type="button">Advance Search</button>
+                </div>
+                <div class="search-button">
+                  <img src="./assets/svgs/search.svg" alt="search" />
+                  <input type="button" value="search" />
+                </div>
+              </div>
+              <div id="pricing" data-tab-content>
+                <input type="text" placeholder="New York, San Francisco, etc" />
+                <div class="room-type">
+                  <select name="room" class="room">
+                    <option
+                      class="placeholder"
+                      value=""
+                      disabled
+                      selected
+                      hidden
+                    >
+                      Select Rooms
+                    </option>
+                    <option value="House">1</option>
+                    <option value="Plot">2</option>
+                    <option value="Agricultural">3</option>
+                    <option value="Commercial">4</option>
+                  </select>
+                </div>
+                <div class="property-type">
+                  <select name="property" class="property">
+                    <option
+                      class="placeholder"
+                      value=""
+                      disabled
+                      selected
+                      hidden
+                    >
+                      Select Property Type
+                    </option>
+                    <option value="House">House</option>
+                    <option value="Plot">Plot</option>
+                    <option value="Agricultural">Agricultural</option>
+                    <option value="Commercial">Commercial</option>
+                  </select>
+                </div>
+                <div class="filter-button">
+                  <img src="./assets/svgs/filter.svg" alt="filters" />
+                  <button type="button">Advance Search</button>
+                </div>
+                <div class="search-button">
+                  <img src="./assets/svgs/search.svg" alt="search" />
+                  <input type="button" value="search" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tags">
+          <div class="customer">
+            <div class="image-wrapper">
+              <img src="./assets/images/HC-1.png" alt="happy customer" />
+              <img src="./assets/images/HC-2.png" alt="happy customer" />
+              <img src="./assets/images/HC-3.png" alt="happy customer" />
+              <img src="./assets/images/HC-4.png" alt="happy customer" />
+              <img src="./assets/images/HC-5.png" alt="happy customer" />
+              <img src="./assets/images/HC-6.png" alt="happy customer" />
+            </div>
+            <h4>72k+ Happy Customers</h4>
+          </div>
+          <div class="listing">
+            <img src="./assets/images/nl.png" alt="new listing" />
+            <h4>200+ New Listings Everyday</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="companies">
+      <img src="./assets/svgs/companies-circle.svg" alt="circle" />
+      <h5>Trusted by 100+ Companies across the globe!</h5>
+      <div class="image-wrapper">
+        <img src="./assets/images/google.png" alt="google" />
+        <img src="./assets/images/amazon.png" alt="amazon" />
+        <img src="./assets/images/logitech.png" alt="logitech" />
+        <img src="./assets/images/samsung.png" alt="samsung" />
+        <img src="./assets/images/spotify.png" alt="spotify" />
+        <img src="./assets/images/netflix.png" alt="netflix" />
+      </div>
+    </div>
+    <div class="property-locator">
+      <div class="content">
+        <span>WHO ARE WE</span>
+        <h2>Assisting individuals in locating the appropriate real estate.</h2>
+        <p>
+          Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec
+          dignissim purus. Nulla convallis ipsum molestie nibh malesuada, ac
+          malesuada leo volutpat.
+        </p>
+        <div class="card-listing">
+          <div class="card">
+            <img src="./assets/svgs/signal.svg" alt="signal" />
+            <div class="content">
+              <h4>Donec porttitor euismod</h4>
+              <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/svgs/profile-2.svg" alt="profile" />
+            <div class="content">
+              <h4>Donec porttitor euismod</h4>
+              <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <img
+          class="real-estate"
+          src="./assets/svgs/real-estate-label.svg"
+          alt="real-estate-label"
+        />
+        <div class="single-img">
+          <img src="./assets/images/pool.png" alt="pool" />
+        </div>
+        <div class="img-column">
+          <img
+            class="mini-circle"
+            src="./assets/svgs/min-circle.svg"
+            alt="min-circle"
+          />
+          <img src="./assets/images/bedroom.jpg" alt="bedroom" />
+          <img src="./assets/images/livingroom.jpg" alt="livingroom" />
+        </div>
+      </div>
+    </div>
+    <div class="latest-properties">
+      <div class="content">
+        <div class="content-listing">
+          <span>CHECKOUT OUR NEW</span>
+          <h2>Latest Listed Properties</h2>
+          <p>
+            Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec
+            dignissim purus.
+          </p>
+        </div>
+        <div class="button-listing">
+          <button type="button">All</button>
+          <button type="button">Sell</button>
+          <button type="button">Rent</button>
+        </div>
+      </div>
+      <div class="card-listing">
+        <swiper-container
+          class="mySwiper"
+          pagination="true"
+          pagination-clickable="true"
+          slides-per-view="3.5"
+          space-between="50"
+          free-mode="true"
+        >
+          <swiper-slide>
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="./assets/images/tranquil.png" alt="tranquil" />
+                <div class="label">
+                  <img src="./assets/svgs/fire.svg" alt="fire" />
+                  <h5>Popular</h5>
+                </div>
+              </div>
+              <div class="card-content">
+                <span>$ 5,970</span>
+                <h4>Tranquil Haven in the Woods</h4>
+                <p>103 Wright CourtBurien, WA 98168</p>
+                <div class="listing">
+                  <p><img src="./assets/svgs/bed.svg" alt="bedroom" />4 Beds</p>
+                  <p>
+                    <img src="./assets/svgs/bath.svg" alt="bathroom" />3 bath
+                  </p>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="./assets/images/cottage.png" alt="cottage" />
+                <div class="label">
+                  <img src="./assets/svgs/small-home.svg" alt="home" />
+                  <h5>New Listing</h5>
+                </div>
+              </div>
+              <div class="card-content">
+                <span>$ 1,970</span>
+                <h4>Serene Retreat by the Lake</h4>
+                <p>1964 Jehovah Drive, VA 22408</p>
+                <div class="listing">
+                  <p><img src="./assets/svgs/bed.svg" alt="bedroom" />3 Beds</p>
+                  <p>
+                    <img src="./assets/svgs/bath.svg" alt="bathroom" />2 bath
+                  </p>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="./assets/images/retreat.png" alt="retreat" />
+                <div class="label">
+                  <img src="./assets/svgs/dollar.svg" alt="dollar" />
+                  <h5>Discounted Price</h5>
+                </div>
+              </div>
+              <div class="card-content">
+                <span>$ 3,470</span>
+                <h4>Charming Cottage in the Meadow</h4>
+                <p>1508 Centennial Farm RoadHarlan, 51537</p>
+                <div class="listing">
+                  <p><img src="./assets/svgs/bed.svg" alt="bedroom" />4 Beds</p>
+                  <p>
+                    <img src="./assets/svgs/bath.svg" alt="bathroom" />4 bath
+                  </p>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="./assets/images/tranquil.png" alt="tranquil" />
+                <div class="label">
+                  <img src="./assets/svgs/fire.svg" alt="fire" />
+                  <h5>Popular</h5>
+                </div>
+              </div>
+              <div class="card-content">
+                <span>$ 5,970</span>
+                <h4>Tranquil Haven in the Woods</h4>
+                <p>103 Wright CourtBurien, WA 98168</p>
+                <div class="listing">
+                  <p><img src="./assets/svgs/bed.svg" alt="bedroom" />4 Beds</p>
+                  <p>
+                    <img src="./assets/svgs/bath.svg" alt="bathroom" />3 bath
+                  </p>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="./assets/images/cottage.png" alt="cottage" />
+                <div class="label">
+                  <img src="./assets/svgs/small-home.svg" alt="home" />
+                  <h5>New Listing</h5>
+                </div>
+              </div>
+              <div class="card-content">
+                <span>$ 1,970</span>
+                <h4>Serene Retreat by the Lake</h4>
+                <p>1964 Jehovah Drive, VA 22408</p>
+                <div class="listing">
+                  <p><img src="./assets/svgs/bed.svg" alt="bedroom" />3 Beds</p>
+                  <p>
+                    <img src="./assets/svgs/bath.svg" alt="bathroom" />2 bath
+                  </p>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="./assets/images/retreat.png" alt="retreat" />
+                <div class="label">
+                  <img src="./assets/svgs/dollar.svg" alt="dollar" />
+                  <h5>Discounted Price</h5>
+                </div>
+              </div>
+              <div class="card-content">
+                <span>$ 3,470</span>
+                <h4>Charming Cottage in the Meadow</h4>
+                <p>1508 Centennial Farm RoadHarlan, 51537</p>
+                <div class="listing">
+                  <p><img src="./assets/svgs/bed.svg" alt="bedroom" />4 Beds</p>
+                  <p>
+                    <img src="./assets/svgs/bath.svg" alt="bathroom" />4 bath
+                  </p>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="./assets/images/tranquil.png" alt="tranquil" />
+                <div class="label">
+                  <img src="./assets/svgs/fire.svg" alt="fire" />
+                  <h5>Popular</h5>
+                </div>
+              </div>
+              <div class="card-content">
+                <span>$ 5,970</span>
+                <h4>Tranquil Haven in the Woods</h4>
+                <p>103 Wright CourtBurien, WA 98168</p>
+                <div class="listing">
+                  <p><img src="./assets/svgs/bed.svg" alt="bedroom" />4 Beds</p>
+                  <p>
+                    <img src="./assets/svgs/bath.svg" alt="bathroom" />3 bath
+                  </p>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="./assets/images/cottage.png" alt="cottage" />
+                <div class="label">
+                  <img src="./assets/svgs/small-home.svg" alt="home" />
+                  <h5>New Listing</h5>
+                </div>
+              </div>
+              <div class="card-content">
+                <span>$ 1,970</span>
+                <h4>Serene Retreat by the Lake</h4>
+                <p>1964 Jehovah Drive, VA 22408</p>
+                <div class="listing">
+                  <p><img src="./assets/svgs/bed.svg" alt="bedroom" />3 Beds</p>
+                  <p>
+                    <img src="./assets/svgs/bath.svg" alt="bathroom" />2 bath
+                  </p>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="./assets/images/retreat.png" alt="retreat" />
+                <div class="label">
+                  <img src="./assets/svgs/dollar.svg" alt="dollar" />
+                  <h5>Discounted Price</h5>
+                </div>
+              </div>
+              <div class="card-content">
+                <span>$ 3,470</span>
+                <h4>Charming Cottage in the Meadow</h4>
+                <p>1508 Centennial Farm RoadHarlan, 51537</p>
+                <div class="listing">
+                  <p><img src="./assets/svgs/bed.svg" alt="bedroom" />4 Beds</p>
+                  <p>
+                    <img src="./assets/svgs/bath.svg" alt="bathroom" />4 bath
+                  </p>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+      </div>
+    </div>
+    <div class="services">
+      <div class="services-content">
+        <h4>OUR SERVICES</h4>
+        <h2>Donec porttitor euismod dignissim</h2>
+        <div class="card-listing">
+          <div class="card">
+            <div class="image-wrapper">
+              <img src="./assets/svgs/b-search.svg" alt="search" />
+            </div>
+            <h4>Buy a New Home</h4>
+            <p>
+              Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec
+              dignissim purus.
+            </p>
+          </div>
+          <div class="card">
+            <div class="image-wrapper">
+              <img src="./assets/svgs/white-house.svg" alt="white-house" />
+            </div>
+            <h4>Sell a House</h4>
+            <p>
+              Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec
+              dignissim purus.
+            </p>
+          </div>
+          <div class="card">
+            <div class="image-wrapper">
+              <img src="./assets/svgs/white-bed.svg" alt="white-bed" />
+            </div>
+            <h4>Rent a House</h4>
+            <p>
+              Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec
+              dignissim purus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="neighborhood-properties">
+      <img
+        class="small-circle"
+        src="./assets/svgs/nearby-circle.svg"
+        alt="circle"
+      />
+      <h4>AREAS ACROSS THE TOWN</h4>
+      <h2>Neighborhood Properties</h2>
+      <div class="image-listing">
+        <div class="image-row">
+          <div class="image-wrapper">
+            <img src="./assets/images/newyork.jpg" alt="newyork" />
+            <div class="img-content">
+              <h1>216</h1>
+              <h4>New York City, NY</h4>
+            </div>
+            <div class="overlay"></div>
+          </div>
+          <div class="image-wrapper">
+            <img src="./assets/images/houston.jpg" alt="houston" />
+            <div class="img-content">
+              <h1>141</h1>
+              <h4>Houston, TX</h4>
+            </div>
+            <div class="overlay"></div>
+          </div>
+          <div class="image-wrapper">
+            <img src="./assets/images/san diago.jpg" alt="san Diego" />
+            <div class="img-content">
+              <h1>212</h1>
+              <h4>San Diego, CA</h4>
+            </div>
+            <div class="overlay"></div>
+          </div>
+        </div>
+        <div class="image-row-2">
+          <div class="image-wrapper">
+            <img src="./assets/images/philadelphia.jpg" alt="philadelphia" />
+            <div class="img-content">
+              <h1>183</h1>
+              <h4>Philadelphia, PA</h4>
+            </div>
+            <div class="overlay"></div>
+          </div>
+          <div class="image-wrapper">
+            <img src="./assets/images/san fransisco.jpg" alt="san fransisco" />
+            <div class="img-content">
+              <h1>183</h1>
+              <h4>Philadelphia, PA</h4>
+            </div>
+            <div class="overlay"></div>
+          </div>
+        </div>
+        <img
+          class="large-circle"
+          src="./assets/svgs/companies-circle.svg"
+          alt="circle"
+        />
+      </div>
+    </div>
+    <div class="experts">
+      <h4>Introduce yourself to</h4>
+      <h2>Our Team of Experts</h2>
+      <div class="card-listing">
+        <div class="card">
+          <img src="./assets/images/brendon.jpg" alt="brendon" />
+          <h3>Brendon M</h3>
+          <h5>CEO & Founder</h5>
+        </div>
+        <div class="card">
+          <img src="./assets/images/jodi.jpg" alt="jodi" />
+          <h3>Jodi J. Appleby</h3>
+          <h5>Real Estate Developer</h5>
+        </div>
+        <div class="card">
+          <img src="./assets/images/justin.jpg" alt="justin" />
+          <h3>Justin S. Meza</h3>
+          <h5>Listing Agent</h5>
+        </div>
+        <div class="card">
+          <img src="./assets/images/susan.jpg" alt="susan" />
+          <h3>Susan T. Smith</h3>
+          <h5>Buyer's Agent</h5>
+        </div>
+      </div>
+    </div>
+    <div class="blogs">
+      <div class="blog-content">
+        <h4>WHAT'S TRENDING</h4>
+        <h2>Latest Blogs & Posts</h2>
+
+        <div class="card-listing">
+          <div class="card">
+            <div class="image-wrapper">
+              <img src="./assets/images/meeting.jpg" alt="meeting" />
+              <div class="overlay"></div>
+              <div class="label">
+                <p><span>28</span><br />Tue</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Top 10 Home Buying Mistakes to Avoid</h3>
+              <p>
+                Etiam eget elementum elit. Aenean dignissim dapibus vestibulum
+              </p>
+              <a href="#"
+                ><img class="button" src="./assets/svgs/next.svg" alt="next"
+              /></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-wrapper">
+              <img src="./assets/images/colony.jpg" alt="colony" />
+              <div class="overlay"></div>
+              <div class="label">
+                <p><span>08</span><br />Mon</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>How to Stage Your Home for a Quick Sale</h3>
+              <p>
+                Etiam eget elementum elit. Aenean dignissim dapibus vestibulum
+              </p>
+              <a href="#"
+                ><img class="button" src="./assets/svgs/next.svg" alt="next"
+              /></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-wrapper">
+              <img src="./assets/images/two boys.jpg" alt="meeting" />
+              <div class="overlay"></div>
+              <div class="label">
+                <p><span>26</span><br />Wed</p>
+              </div>
+            </div>
+            <div class="content">
+              <h3>5 Tips for First-Time Home Sellers</h3>
+              <p>
+                Etiam eget elementum elit. Aenean dignissim dapibus vestibulum
+              </p>
+              <a href="#"
+                ><img class="button" src="./assets/svgs/next.svg" alt="next"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials">
+      <div class="content">
+        <h4>TESTIMONIALS</h4>
+        <h2>Look What Our Customers Say!</h2>
+        <p>
+          Fusce venenatis tellus a felis scelerisque, non pulvinar est
+          pellentesque.
+        </p>
+        <div class="image-wrapper">
+          <img src="./assets/svgs/previous.svg" alt="previous" />
+          <img src="./assets/svgs/next-2.svg" alt="next" />
+        </div>
+      </div>
+      <div class="testimonial-listing">
+        <div class="card">
+          <img src="./assets/svgs/min-circle.svg" alt="min-circle" />
+          <div class="card-content">
+            <img src="./assets/svgs/quote.svg" alt="quote" />
+            <h4>
+              I highly recommend Jodi J. Appleby. She was attentive to our needs
+              and worked tirelessly to find us the perfect home. We couldn't be
+              happier with our new place!
+            </h4>
+            <div class="card-listing">
+              <div class="profile">
+                <img src="./assets/images/barbara.png" alt="barbara" />
+                <h4>Barbara D. Smith</h4>
+              </div>
+              <div class="rating">
+                <img src="./assets/svgs/yellow-star.svg" alt="yellow-star" />
+                <img src="./assets/svgs/yellow-star.svg" alt="yellow-star" />
+                <img src="./assets/svgs/yellow-star.svg" alt="yellow-star" />
+                <img src="./assets/svgs/yellow-star.svg" alt="yellow-star" />
+                <img src="./assets/svgs/star.svg" alt="star" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <img src="./assets/svgs/banner-circle.svg" alt="circle" />
+      <div class="image-wrapper">
+        <img src="./assets/images/main banner.png" alt="main" />
+        <img src="./assets/svgs/banner-circle.svg" alt="circle" />
+      </div>
+      <div class="content">
+        <h2>Become a Agent.</h2>
+        <p>
+          Fusce venenatis tellus a felis scelerisque. venenatis tellus a felis
+          scelerisque.
+        </p>
+      </div>
+      <button type="button">Register Now</button>
+    </div>
+    <footer>
+      <div class="footer-listing">
+        <div class="menu-listing">
+          <div class="about-us">
+            <img src="./assets/svgs/logo.svg" alt="logo" />
+            <h5>2728 Hickory StreetSalt Lake City, UT 84104</h5>
+            <div class="phone">
+              <h5>
+                <img src="./assets/svgs/black-phone.svg" alt="phone" />+1
+                206-214-2298
+              </h5>
+            </div>
+            <div class="mail">
+              <h5>
+                <img
+                  src="./assets/svgs/black-mail.svg"
+                  alt="mail"
+                />support@rezilla.com
+              </h5>
+            </div>
+          </div>
+          <div class="quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Listing</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Become a Agent</a></li>
+            </ul>
+          </div>
+          <div class="discovery">
+            <h4>Discovery</h4>
+            <ul>
+              <li><a href="#">Canada</a></li>
+              <li><a href="#">United States</a></li>
+              <li><a href="#">Germany</a></li>
+              <li><a href="#">Africa</a></li>
+              <li><a href="#">India</a></li>
+            </ul>
+          </div>
+          <div class="column-listing">
+            <div class="newsletter">
+              <h4>Subscribe to our Newsletter!</h4>
+              <div class="input-wrapper">
+                <input type="email" placeholder="Email Address" />
+                <a href="#"
+                  ><img
+                    src="./assets/svgs/blue-right-arrow.svg"
+                    alt="arrow-right"
+                /></a>
+              </div>
+            </div>
+            <div class="social">
+              <h4>Follow Us on</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img src="./assets/svgs/linkedin.svg" alt="linkedin"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./assets/svgs/facebook.svg" alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./assets/svgs/instagram.svg" alt="instagram"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-bar">
+        <div class="bar-content">
+          <p>© Rezilla – All rights reserved</p>
+          <ul>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
