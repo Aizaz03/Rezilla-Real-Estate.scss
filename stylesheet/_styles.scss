@@ -1173,10 +1173,12 @@ body {
       border-radius: 1.875rem;
       box-shadow: 10px 10px 30px 0px $testimonialShadow;
       position: relative;
+      z-index: 10;
       > img {
         position: absolute;
         top: -1.25rem;
         left: -1.25rem;
+        z-index: 1;
       }
 
       .card-content {
@@ -1211,6 +1213,7 @@ body {
     }
     .pagination {
       @include flex(center, center, 2.875rem, column);
+      width: 0.25rem;
       span {
         transform: rotate(90deg);
         height: 0.25rem;
@@ -1222,6 +1225,223 @@ body {
         &:hover {
           background: $lightGrey;
           opacity: 100%;
+        }
+      }
+    }
+  }
+}
+.banner {
+  max-width: 75rem;
+  width: 100%;
+  margin: 15.625rem auto 11.25rem;
+  background-color: $mainBgColor;
+  height: 16.25rem;
+  @include flex(start, center, 5rem);
+  position: relative;
+  border-radius: 2.5rem;
+  > img {
+    position: absolute;
+    top: -2.5rem;
+    right: 2.3125rem;
+  }
+  .image-wrapper {
+    width: 22.375rem;
+    img {
+      &:nth-child(1) {
+        width: 22.375rem;
+        height: 22.0625rem;
+        object-fit: cover;
+        position: absolute;
+        bottom: 0;
+        left: 1.25rem;
+      }
+      &:nth-child(2) {
+        position: absolute;
+        bottom: 5rem;
+        left: 18.25rem;
+      }
+    }
+  }
+  .content {
+    width: 21.5rem;
+    h2 {
+      color: $secondaryColor;
+    }
+    p {
+      margin-top: 0.625rem;
+      color: $secondaryColor;
+    }
+  }
+  button {
+    border-radius: 30px;
+    background-color: $secondaryColor;
+    border: none;
+    @include font-styles($mainBgColor, 1rem, 1.5rem, 500, 0, center);
+    padding: 0.7813rem 2.1563rem;
+  }
+}
+footer {
+  background-color: $footerBgcolor;
+  .footer-listing {
+    .menu-listing {
+      max-width: 70rem;
+      width: 100%;
+      padding: 5.125rem 0 6.8125rem;
+      margin: 0 auto;
+      @include flex(start, start, 6.25rem);
+      .about-us {
+        width: 12.3125rem;
+        > img {
+          width: 7.75rem;
+          height: 3.125rem;
+        }
+        > h5 {
+          margin-top: 10px;
+        }
+        .phone {
+          margin-top: 1.875rem;
+          h5 {
+            @include flex(start, center, 0.5rem);
+            img {
+              width: 1.25rem;
+              height: 1.25rem;
+            }
+          }
+        }
+        .mail {
+          margin-top: 0.9375rem;
+          h5 {
+            @include flex(start, center, 0.5rem);
+            img {
+              width: 0.875rem;
+              height: 1.25rem;
+            }
+          }
+        }
+      }
+      .quick-links {
+        ul {
+          padding: 0 !important;
+          margin-block-start: 0;
+          margin-block-end: 0;
+          margin-top: 0.9375rem;
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+              @include font-styles(
+                $mainTextColor,
+                1rem,
+                1.625rem,
+                400,
+                0,
+                start
+              );
+            }
+          }
+        }
+      }
+      .discovery {
+        ul {
+          padding: 0 !important;
+          margin-block-start: 0;
+          margin-top: 0.9375rem;
+          margin-block-end: 0;
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+              @include font-styles(
+                $mainTextColor,
+                1rem,
+                1.625rem,
+                400,
+                0,
+                start
+              );
+            }
+          }
+        }
+      }
+      .column-listing {
+        @include flex(start, start, 0.625rem, column);
+        .newsletter {
+          h4 {
+            width: 15.875rem;
+          }
+          .input-wrapper {
+            width: 21.875rem;
+            margin-top: 0.625rem;
+            height: 60px;
+            @include flex(space-between, center, 0.625rem);
+            background-color: $secondaryColor;
+            border-radius: 0.625rem;
+            padding: 0 0.3125rem 0 1.25rem;
+            input {
+              background: transparent;
+              border: none;
+              &:focus {
+                outline: none;
+              }
+              &::placeholder {
+                @include font-styles(
+                  $paginationColor,
+                  1rem,
+                  1.5rem,
+                  400,
+                  0,
+                  left
+                );
+                font-family: "poppins", "sans-serif";
+              }
+            }
+            a {
+              @include flex(center, center, 0);
+              img {
+                height: 3.125rem;
+                width: 3.125rem;
+              }
+            }
+          }
+        }
+        .social {
+          ul {
+            padding: 0 !important;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-top: 0.9375rem;
+            @include flex(start, start, 0.625rem);
+            li {
+              list-style: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyright-bar {
+    background-color: $copyrightbgcolor;
+    padding: 0.7813rem 0;
+    .bar-content {
+      max-width: 70rem;
+      width: 100%;
+      margin: 0 auto;
+      @include flex(space-between, center, 1.875rem);
+      p {
+        color: $paginationColor;
+      }
+      ul {
+        @include flex(start, center, 1.875rem);
+        padding: 0 !important;
+        margin-block-start: 0;
+        margin-block-end: 0;
+
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            @include font-styles($paginationColor, 1rem, 1.5rem, 400, 0, left);
+          }
         }
       }
     }
